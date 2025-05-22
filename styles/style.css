@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
     
 }
-
 body{
     background-color: #1E1E1E;
     color: white;
@@ -20,31 +19,24 @@ body{
         font-size: 18px;
         padding: 20px;
     }
-    header{ 
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
-        font-size: 25px;
-
-    }
-  
+   
     #about-me{
         width: 70%;
         margin: auto;
     }
        
-    }
     #about-me h2{
         font-size: 20px;
     }
     #about-me p{
         font-size: 18px;
     }
-    
+
    
     .navbar a{
         margin-left: 20px;
     }
+}
     @media screen and (min-width: 1200px) {
         body{
             font-size: 20px;
@@ -52,17 +44,20 @@ body{
         }
         header{ 
             padding: 20px;
-            display: flex;
-            flex-direction: row;
             font-size: 40px;
-
         }
-      
+        header h1{
+            width: 35%;
+        }
+       
         #about-me{
             width: 70%;
             margin: auto;
         }
-           
+           #skills{
+            min-width: fit-content;
+            height: 100%
+            }
         }
    
    
@@ -73,7 +68,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -101,6 +96,8 @@ header h1{
 }
 
 
+
+
 .navbar{
     font-size: small;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.623) 0px 0px 0px 1px inset;  
@@ -120,7 +117,6 @@ header h1{
 
 #about-me{
     display: flex ;
- 
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -132,7 +128,6 @@ header h1{
 #about-me h2{
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.187) 0px 0px 0px 1px inset;      
-    
     font-size: 20px;
 }
 
@@ -142,4 +137,10 @@ header h1{
     word-spacing: 2px;
     line-height: 1.5;
 }
+
+
+.section img{
+    width: 200px;
+}
+
 
