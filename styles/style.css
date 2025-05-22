@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/pixel-millennium');
 *{
    font-family: 'Courier New', Courier, monospace;
     margin: 0;
@@ -9,20 +10,75 @@
 body{
     background-color: #1E1E1E;
     color: white;
-    padding: 20px;
-    font-size:20px;
+    font-size:16px;
+
 }
+
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 18px;
+        padding: 20px;
+    }
+    header{ 
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        font-size: 25px;
+
+    }
+  
+    #about-me{
+        width: 70%;
+        margin: auto;
+    }
+       
+    }
+    #about-me h2{
+        font-size: 20px;
+    }
+    #about-me p{
+        font-size: 18px;
+    }
+    
+   
+    .navbar a{
+        margin-left: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        body{
+            font-size: 20px;
+            padding: 30px;
+        }
+        header{ 
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            font-size: 40px;
+
+        }
+      
+        #about-me{
+            width: 70%;
+            margin: auto;
+        }
+           
+        }
+   
+   
+    
+
 header{
-    font-size: 35px;
-    padding: 40px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 20px;
 }
 
 header img{
-    width: 300px;
+    width: 200px;
     border-radius: 5px;
     box-shadow: rgba(246, 249, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -30,15 +86,17 @@ header img{
 h1,h2{
     color: rgb(246, 249, 48);
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 a, b{
      color: rgb(246, 249, 48);
 }
 
 header h1{
+   
+    font-family: 'Pixel Millennium', sans-serif;
     text-align: center;
-    width: 500px;
+    
     line-height: 2;
 }
 
@@ -54,41 +112,34 @@ header h1{
     padding: 10px;
 }
 
-.navbar a{
-   
-    margin-left: 50px;
-}
+
 .navbar a:hover{
     color: #fff;
-}
+}   
 
 
-.box-section{
-    
+#about-me{
     display: flex ;
+ 
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
-    max-width: 60%;
-    min-width: 60%;
-    margin: auto;
+    gap: 15px;
+    padding: 10px;
 
    
 }
-.box-section h2{
+#about-me h2{
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.187) 0px 0px 0px 1px inset;      
-    text-align: right;
-    font-size: 30px;
+    
+    font-size: 20px;
 }
 
-.box-section p{
+#about-me p{
+    padding: 2px;
+    text-align: justify;
     word-spacing: 2px;
     line-height: 1.5;
 }
 
-.content-section{
-    padding: 10px;
-    text-align: justify;
-}
