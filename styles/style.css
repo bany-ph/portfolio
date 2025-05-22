@@ -19,6 +19,14 @@ body{
         font-size: 18px;
         padding: 20px;
     }
+    header{ 
+            padding: 10px;
+            font-size: 30px;
+     }
+     header h1{
+        width: 400px;
+     }
+ 
    
     #about-me{
         width: 70%;
@@ -31,7 +39,11 @@ body{
     #about-me p{
         font-size: 18px;
     }
+   
+    .footer-main form input, textarea{
+         width: 400px; 
 
+}
    
     .navbar a{
         margin-left: 20px;
@@ -43,21 +55,19 @@ body{
             padding: 30px;
         }
         header{ 
-            padding: 20px;
+            padding: 30px;
             font-size: 40px;
         }
-        header h1{
-            width: 35%;
-        }
+    
+      
+       
        
         #about-me{
-            width: 70%;
+            width: 60%;
             margin: auto;
         }
-           #skills{
-            min-width: fit-content;
-            height: 100%
-            }
+           
+        
         }
    
    
@@ -88,12 +98,12 @@ a, b{
 }
 
 header h1{
-   
     font-family: 'Pixel Millennium', sans-serif;
     text-align: center;
-    
     line-height: 2;
 }
+
+
 
 
 
@@ -101,16 +111,16 @@ header h1{
 .navbar{
     font-size: small;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.623) 0px 0px 0px 1px inset;  
-    background-color: #1e1e1eb1;
+    background-color: #1e1e1ed7;
     top: 0px;
     position: sticky;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    
+    padding: 5px;
 }
 
 
-.navbar a:hover{
+a:hover{
     color: #fff;
 }   
 
@@ -122,6 +132,7 @@ header h1{
     align-items: center;
     gap: 15px;
     padding: 10px;
+    margin: 4rem auto;
 
    
 }
@@ -143,4 +154,60 @@ header h1{
     width: 200px;
 }
 
+.footer-main{
+     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.187) 0px 0px 0px 1px inset;      
+    bottom: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 500px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 100px;
+   
+}
+
+.footer-main div, h2{
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+
+.footer-main form{
+
+     padding: 20px;
+}
+
+.footer-main form input, textarea{
+    padding: 5px;
+    display: block;
+    outline: none;
+    font-size: 18px;
+}
+
+
+.footer-main form label + input, textarea{
+    margin: 10px 0;
+}
+
+
+.footer-main button{
+    border: none;
+  padding: 5px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+   
+
+}
+
+
+.footer-main button:hover{
+     cursor: pointer;
+     background-color: rgba(246, 249, 48, 1);
+
+}
 
