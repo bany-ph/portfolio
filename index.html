@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive design -->
     <title>My personal Portfolio</title> <!-- title of the page -->
     <meta name="description" content="Personal Portfolio of brisbany as Riwi developer"> <!-- description of the page -->
-
+    <link rel="stylesheet" href="/styles/style.css"> <!-- link to the css file -->
 </head>
 <body>
-    <nav> 
+    
+  <header> <!-- the header of the page -->
+        <img src="img/capybara.webp" alt="Capybara's photo" >
+        <h1>Brisbany Puerta Herrera</h1> 
+  </header>
+    <nav class="navbar"> 
           <!-- navigation in the page -->
       <a href="#about-me">About Me</a> 
       <a href="#projects">Projects</a>
       <a href="#contact">Contact me</a>
   </nav>
-  <header> <!-- the header of the page -->
 
-        
-      
-        <h1>Brisbany Puerta Herrera</h1> 
-        <img src="img/capybara.webp" alt="Capybara's photo" width="200">
-  </header>
-    
-
-    <section id="about-me"> 
+    <section id="about-me" class="box-section"> 
         <!-- A section about me -->
-        <h1>About me</h1>
-          <p> <!-- A paragraph about me -->
-                Hi! My name is <b>Brisbany</b><br>
+       
+
+             <h2>About me</h2>
+
+    
+         <div class="content-section">
+             <p> <!-- A paragraph about me -->
+                Hi! My name is <b>Brisbany</b>
                 I’m 18 years old, and I’m a creative, committed, 
                 and curious person with a strong desire to keep learning and growing both personally 
-                and professionally. <br> I enjoy discovering new things, taking on challenges, and developing 
+                and professionally.I enjoy discovering new things, taking on challenges, and developing 
                 skills that allow me to contribute positively in any environment I’m part of.
             </p>
+         </div>
+         
     </section>
 
-    <section >
+    <section class="">
         <h2>Skills</h2>
-        <p> <!-- A paragraph about my skills -->
+        <div class="content-section">
+            <p> <!-- A paragraph about my skills -->
             I have experience in the following technologies:
         </p>
         <!-- unordered list -->
@@ -48,6 +53,8 @@
             <li>c#</li>
             <li>posgreSQL</li>
         </ul>
+        </div>
+        
     </section>
 
 
@@ -67,22 +74,21 @@
             <!-- input type text -->
             <!-- the input type text is used to validate the name format -->
             <input type="text" name="name" id="name" required>  <!--   -->
-                <br>
+                
 
             <label for="email ">Email: </label> 
             <!-- input type email -->
             <!-- the input type email is used to validate the email format -->
             <input type="email" name="email" id="email" required>
-                <br>
+                
             <label for="message">Message: </label>
             <!-- textarea for the message -->
             <!-- the textarea is used to allow the user to write a message -->
             <textarea name="message" id="message" rows="4" required></textarea>
-                <br>
+                
             <input type="submit" value="Send">  
         </form>    
-        <br>
-        <br>
+    
         <!-- A link to my github  -->
         <p>Find me on:</p>
         <a href="https://github.com/bany-ph" target="_blank">GitHub</a>

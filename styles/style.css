@@ -1,0 +1,94 @@
+*{
+   font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: #1E1E1E;
+    color: white;
+    padding: 20px;
+    font-size:20px;
+}
+header{
+    font-size: 35px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header img{
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(246, 249, 111, 0.2) 0px 7px 29px 0px;
+}
+
+h1,h2{
+    color: rgb(246, 249, 48);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+a, b{
+     color: rgb(246, 249, 48);
+}
+
+header h1{
+    text-align: center;
+    width: 500px;
+    line-height: 2;
+}
+
+
+.navbar{
+    font-size: small;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.623) 0px 0px 0px 1px inset;  
+    background-color: #1e1e1eb1;
+    top: 0px;
+    position: sticky;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar a{
+   
+    margin-left: 50px;
+}
+.navbar a:hover{
+    color: #fff;
+}
+
+
+.box-section{
+    
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    max-width: 60%;
+    min-width: 60%;
+    margin: auto;
+
+   
+}
+.box-section h2{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(209, 213, 219, 0.187) 0px 0px 0px 1px inset;      
+    text-align: right;
+    font-size: 30px;
+}
+
+.box-section p{
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+.content-section{
+    padding: 10px;
+    text-align: justify;
+}
