@@ -6,9 +6,11 @@
     <title>My personal Portfolio</title> <!-- title of the page -->
     <meta name="description" content="Personal Portfolio of brisbany as Riwi developer"> <!-- description of the page -->
     <link rel="stylesheet" href="/styles/style.css"> <!-- link to the css file -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> <!-- for icons -->
+    <script src="https://kit.fontawesome.com/d5954399fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
   <header> <!-- the header of the page -->
         <img src="img/capybara.webp" alt="Capybara's photo" >
         <h1 class="">Brisbany Puerta Herrera</h1> 
@@ -20,14 +22,14 @@
       <a href="#contact">Contact me</a>
   </nav>
 
-    <section id="about-me"> 
+    <section class="sections" id="about-me"> 
         <!-- A section about me -->
        
 
              <h2>About me</h2>
 
     
-         <div class="content-section">
+         <div>
              <p> <!-- A paragraph about me -->
                 Hi! My name is <b>Brisbany</b>
                 I’m 18 years old, and I’m a creative, committed, 
@@ -39,43 +41,69 @@
          
     </section>
 
-
-<!-- <div class="container">
+    
+ 
    
- <section class="section" id="skills">
-        <h2>Skills</h2>
+ <section class="sections" id="skills">
+
+    <h2>SKILLS</h2>
         <div class="content-section">
-        
-        <ul>  
-           
-            <li>html</li>
-            <li>Java</li>
-            <li>c#</li>
-            <li>posgreSQL</li>
-        </ul>
+            <i class="devicon-java-plain-wordmark"></i>
+            <i class="devicon-csharp-line"></i>
+            <i class="devicon-python-plain"></i>
+            <i class="devicon-php-plain"></i>
+            <i class="devicon-postgresql-plain"></i>
+            <i class="devicon-npm-original-wordmark"></i>
+            <i class="devicon-github-original"></i>
+            <i class="devicon-git-plain"></i>
+            <i class="devicon-vscode-plain"></i>
         </div>
         
     </section>
 
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
+<section class="sections" id="projects">
+    <h2>PROJECTS</h2>
         <div class="content-section">
-            <h3>Project 1: Portfolio Website</h3>
-             <p>This is my first project where I built a personal portfolio using HTML only.</p>
-            <img src="./img/project.png" alt="Project portfolio image">
-        </div>
-        
-    </section>
 
-</div> -->
+
+            <div class="box">
+                    <h4>Portfolio</h4>
+                    <span>My own portfolio</span>
+                    <a href="https://github.com/bany-ph" target="_blank"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    
+            </div>
+            <div class="box">
+                    <h4>To-do App</h4>
+                    <span> A To-do app <b>in java</b></span>
+                    <a href="https://github.com/bany-ph" target="_blank"><i class="fa-solid fa-circle-chevron-right"></i></a>
+            </div>
+            <div class="box">
+                    <h4>Coming...</h4>
+
+            </div>
+            <div class="box">
+                <h4>Coming....</h4>
+
+            </div>
+
+
+        </div>
+
+
+</section>
+   
+
    
 
     <footer  class="footer-main">
-        <div>
+        <div class="find-me">
+                <!-- A link to my github  -->
+            <h2>Find me on:</h2>
+           
 
-            <p>Find me on:</p>
-            <a href="https://github.com/bany-ph" target="_blank">GitHub</a>
+            <i class="devicon-github-original"></i>
+            <a href="https://github.com/bany-ph" target="_blank">Github</a>
+           
         </div>
 
 
@@ -104,7 +132,7 @@
             <button type="submit">Send</button>
         </form>    
     
-        <!-- A link to my github  -->
+        
       
     </footer>
 </body>
