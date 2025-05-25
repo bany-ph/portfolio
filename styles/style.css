@@ -70,10 +70,7 @@ body{
             width: 60%;
             margin: auto;
         }
-        .footer-main form{
-            
-
-        }
+        
            
         
     }
@@ -168,6 +165,7 @@ i:hover{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 15px;
     margin: 4rem auto;
     padding: 40px;
