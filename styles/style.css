@@ -1,15 +1,22 @@
 @import url('https://fonts.cdnfonts.com/css/pixel-millennium'); /* for pixel font in  titles */
 *{
    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     
 }
 body{
+    margin: 0;
     background-color: #1E1E1E;
     color: white;
     font-size:16px;
+
+}
+
+
+
+:root{
+    --color-main: rgb(246, 249, 48);
 
 }
 
@@ -33,6 +40,7 @@ body{
     .sections{
         width: 70%;
         margin: auto;
+       
     }
        
     .sections h2{
@@ -102,12 +110,12 @@ h1,h2,h3,h4{
     font-family: 'Pixel Millennium', sans-serif;
     text-align: center;
     line-height: 2;
-    color: rgb(246, 249, 48);
+    color: var(--color-main);
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 a, b{
-     color: rgb(246, 249, 48);
+     color: var(--color-main)
 }
 /* hover for all the links  */
 a:hover{
@@ -132,7 +140,7 @@ i{
 
 i:hover{
     cursor: pointer;
-    color:rgb(238, 241, 62);
+    color: var(--color-main);
     transform: scale(0.9);
 }
   
@@ -167,7 +175,7 @@ i:hover{
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    margin: 4rem auto;
+    
     padding: 40px;
  
 }
@@ -289,7 +297,7 @@ i:hover{
 
 .footer-main button:hover{
      cursor: pointer;
-     background-color: rgba(246, 249, 48, 1);
+     background-color: var(--color-main);
 
 }
 
