@@ -20,68 +20,7 @@ body{
 
 }
 
-/* responsive */
-@media screen and (min-width: 768px) {
-    body{
-        font-size: 18px;
-        
-    }
-    header{
-        
-            padding: 20px;
-            font-size: 30px;
-     }
-     header h1{
-        width: 300px;
-     }
-    
- 
-   
-    .sections{
-        width: 70%;
-        margin: auto;
-       
-    }
-       
-    .sections h2{
-        font-size: 20px;
-    }
-    .sections p{
-        font-size: 18px;
-    }
-   
-    .footer-main form input, textarea{
-         width: 400px; 
 
-}
-   
-    .navbar a{
-        margin-left: 20px;
-    }
-}
-    @media screen and (min-width: 1200px) {
-        body{
-            font-size: 20px;
-            
-        }
-        header{ 
-            padding: 30px;
-            font-size: 40px;
-        }
-        header h1{
-            width: 400px;
-         }
-      
-       
-       
-        .sections{
-            width: 60%;
-            margin: auto;
-        }
-        
-           
-        
-    }
    
    
     
@@ -174,6 +113,7 @@ i:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    align-content: center;
     gap: 15px;
     
     padding: 40px;
@@ -204,13 +144,21 @@ i:hover{
     align-items: center;
     justify-content: center;
     align-content: center;
+  
     gap: 55px;
     
 }
 
 
 
-/* projects boxes */
+/*  projects boxes */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+}
+
+
 .box{
     display: flex;
     align-items: center;
@@ -235,6 +183,12 @@ i:hover{
     padding: 10px;
     font-size: 15px;
 }
+
+
+
+   
+
+
 
 
 
@@ -301,3 +255,74 @@ i:hover{
 
 }
 
+
+/* responsive */
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 18px;
+        
+    }
+    header{
+        
+            padding: 20px;
+            font-size: 30px;
+     }
+     header h1{
+        width: 300px;
+     }
+    
+ 
+   
+    .sections{
+        width: 70%;
+        margin: auto;
+       
+    }
+       
+    .sections h2{
+        font-size: 20px;
+    }
+    .sections p{
+        font-size: 18px;
+    }
+   
+    .footer-main form input, textarea{
+         width: 400px; 
+
+    }
+   
+    .navbar a{
+        margin-left: 20px;
+    }
+}
+    @media screen and (min-width: 1024px) {
+        body{
+            font-size: 20px;
+            
+        }
+        header{ 
+            padding: 30px;
+            font-size: 40px;
+        }
+        header h1{
+            width: 400px;
+        }
+
+
+
+        /* projects grid */
+        .grid-container{
+            grid-template-columns: repeat(2,1fr);
+        }
+        /* last box */
+        .last{
+            width: 100%;
+           grid-column: span 2;
+        }
+
+
+      
+       
+           
+        
+    }
